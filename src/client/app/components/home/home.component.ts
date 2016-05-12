@@ -12,10 +12,11 @@ import {NameListService} from '../../frameworks/app.framework/index';
 })
 export class HomeComponent {
   public newName: string = '';
-  constructor(private store: Store<any>, public nameListService: NameListService) { 
-
+  public inputPlaceholder: string = '';
+  constructor(private store: Store<any>, public nameListService: NameListService) {
+    this.inputPlaceholder = "Enter a new technology...";
   }
-  
+
   /*
    * @param newname  any text as input.
    * @returns return false to prevent default form submit behavior to refresh the page.

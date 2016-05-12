@@ -23,7 +23,7 @@ export function main() {
       t.e(names).toEqual(jasmine.any(Observable));
       return new Promise((resolve) => {
         names.subscribe((names: Array<string>) => {
-          t.e(names).toEqual(['Edsger Dijkstra', 'Donald Knuth', 'Alan Turing', 'Grace Hopper']);
+          t.e(names).toEqual(['Android', 'Chrome', 'Angular', 'Firebase']);
           resolve();
         });
       });
@@ -34,7 +34,7 @@ export function main() {
       nameList.add('test');
       return new Promise((resolve) => {
         nameList.names.subscribe((names: Array<string>) => {
-          t.e(names).toEqual(['Edsger Dijkstra', 'Donald Knuth', 'Alan Turing', 'Grace Hopper', 'test']);
+          t.e(names).toEqual(['Android', 'Chrome', 'Angular', 'Firebase', 'test']);
           resolve();
         });
       });

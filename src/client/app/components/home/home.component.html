@@ -1,17 +1,17 @@
 <h2>
-  {{ 'LOVE_TECH' | translate }} <smile></smile>
+  Welcome to Google I/O Extended! <smile></smile>
 </h2>
 
 <p>
-  {{'ABOUT_REWARD' | translate}}
+  Here is a list of awesome Google technologies:
 </p>
 <p>
-  {{'ABOUT_ADD' | translate}}
+  You want more? Add them yourself!
 </p>
 
 <form (submit)="addName()">
-  <input [(ngModel)]="newName" [placeholder]="'INPUT_HINT' | translate">
-  <button type="submit">{{'ADD_BTN_TEXT' | translate}}</button>
+  <input [(ngModel)]="newName" [placeholder]="inputPlaceholder">
+  <button type="submit">Add</button>
 </form>
 
 <ul>

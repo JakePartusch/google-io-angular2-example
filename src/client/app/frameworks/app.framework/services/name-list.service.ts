@@ -14,10 +14,10 @@ const CATEGORY: string = 'NameList';
  * ngrx setup start --
  */
 const initialState: Array<string> = [
-  'Edsger Dijkstra',
-  'Donald Knuth',
-  'Alan Turing',
-  'Grace Hopper'
+  'Android',
+  'Chrome',
+  'Angular',
+  'Firebase'
 ];
 
 export const NAME_LIST_ACTIONS: any = {
@@ -45,7 +45,7 @@ export class NameListService extends Analytics {
     this.category = CATEGORY;
 
     this.names = store.select('names');
-  }  
+  }
 
   add(name: string): void {
     this.track(NAME_LIST_ACTIONS.NAME_ADDED, { label: name });
