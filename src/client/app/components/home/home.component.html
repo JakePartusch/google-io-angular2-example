@@ -1,13 +1,6 @@
-<h2>
-  {{title}}
-</h2>
-
-<p>
-  Here is a list of awesome Google technologies:
-</p>
-<p>
-  You want more? Add them yourself!
-</p>
+<h2>{{title}}</h2>
+<p>Here is a list of awesome Google technologies:</p>
+<p>You want more? Add them yourself!</p>
 
 <form (submit)="addName()">
   <input [(ngModel)]="newName" [placeholder]="inputPlaceholder">
