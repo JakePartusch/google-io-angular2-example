@@ -13,8 +13,10 @@ import {NameListService} from '../../frameworks/app.framework/index';
 export class HomeComponent {
   public newName: string = '';
   public inputPlaceholder: string = '';
+  public title: string = '';
   constructor(private store: Store<any>, public nameListService: NameListService) {
     this.inputPlaceholder = "Enter a new technology...";
+    this.title = "Welcome to Google I/O Extended!";
   }
 
   /*

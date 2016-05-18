@@ -1,13 +1,13 @@
-<ActionBar title="Angular 2 Seed Advanced"> 
+<ActionBar title="Google I/O Angular 2 Example">
 </ActionBar>
 <StackLayout class="container-content">
-  <Label [text]="'LOVE_TECH' | translate" textWrap="true" class="love-tech"></Label>
-  <Label [text]="'SUCCESS_MSG' | translate" textWrap="true"></Label>
-  <Label [text]="'ABOUT_REWARD' | translate" textWrap="true"></Label>
+  <Label text="{{title}}" textWrap="true" class="love-tech"></Label>
+  <Label text="Here is a list of awesome Google technologies:" textWrap="true"></Label>
+  <Label text="You want more? Add them yourself!" textWrap="true"></Label>
 
-  <TextField [(ngModel)]="newName" [hint]="'INPUT_HINT' | translate" autocorrect="false" autocapitalizationType="none"></TextField>
-  <Button [text]="'ADD_BTN_TEXT' | translate" (tap)="addName()"></Button>
-  
+  <TextField [(ngModel)]="newName" [hint]="inputPlaceholder" autocorrect="false" autocapitalizationType="none"></TextField>
+  <Button text="Add" (tap)="addName()"></Button>
+
   <ListView [items]="nameListService.names | async" row="1" colSpan="2" height="300">
     <template let-name="item" let-odd="odd" let-even="even">
       <StackLayout [class.odd]="odd" [class.even]="even" class="list-item">
